@@ -1,5 +1,4 @@
 .zig-cache
 zig-out/bin/hello.exe
 zig-out/bin/hello.pdb
-tests
 .vscode

@@ -13,4 +13,3 @@ pub fn lerp2(a: v.Vec2, b: v.Vec2, t: i32) v.Vec2 {
 pub fn lerp3(a: v.Vec3, b: v.Vec3, t: i32) v.Vec3 {
     return v.Vec3.add(a, v.Vec3.mulI(t, v.Vec3.sub(a, b)));
 }
-

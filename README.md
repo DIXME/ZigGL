@@ -1,2 +1,2 @@
 # ZigGL
-zig w open gl (glad &amp; glfw)
+zig w open gl (glad & glfw)

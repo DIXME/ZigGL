@@ -15,6 +15,9 @@ pub fn main() void {
         return;
     }
     while (c.open(&win) == 1) {
+        c.glClearColor(0.1, 0.1, 0.1, 1.0);
+        c.glClear(c.GL_COLOR_BUFFER_BIT);
+
         c.loop(&win);
     }
     c.close();

@@ -1,4 +1,4 @@
-const v = @import("Vectors.zig");
+const v = @import("vectors");
 
 // oparator overloading would look SO much cleaner, however this is what we have to do 😔
 

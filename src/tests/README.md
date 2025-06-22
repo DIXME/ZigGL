@@ -4,3 +4,6 @@ beacuse i need to link depencies and c headers and such, however when i tried to
 it the way your supposed to nothing happend not even an error, hopefully i will
 solve this sooner beacuse zig tests are verry cool and i look forward to thier
 use
+
+# really
+these are really just examples for now or templates if you will

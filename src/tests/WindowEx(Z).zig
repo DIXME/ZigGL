@@ -1,6 +1,6 @@
 const std = @import("std");
-const cc = @import("Cc.zig");
-const w = @import("Window.zig");
+const cc = @import("ccom");
+const w = @import("window");
 const c = @cImport({
     @cInclude("glad/glad.h");
     @cInclude("GLFW/glfw3.h");
@@ -18,6 +18,8 @@ pub fn main() !void {
         return;
     }
     while(window.open()){
+        c.glClearColor(0.5, 0.5, 0.6, 1.0);
+        c.glClear(c.GL_COLOR_BUFFER_BIT);
         window.loop();
     }
     window.close();

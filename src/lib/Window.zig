@@ -4,7 +4,7 @@ const c = @cImport({
 });
 
 const std = @import("std");
-const cc = @import("Cc.zig");
+const cc = @import("ccom");
 
 pub const GLFW_INIT_FAILURE:   i32 = -1;
 pub const GLAD_INIT_FAILURE:   i32 = -2;
@@ -53,20 +53,3 @@ pub const Window = struct {
         c.glfwSwapBuffers(wn.window);
     }
 };
-
-test "window" {
-    var window: Window = .{
-        .width = 640,
-        .height = 450,
-        .title = "tuffc",
-        .window = null
-    };
-    if(window.init()!=WINDOW_INIT_SUCSESS){
-        std.debug.print("[-] window was not initalized now exiting", .{});
-        return;
-    }
-    while(window.open()){
-        window.loop();
-    }
-    window.close();
-}
